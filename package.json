@@ -1,0 +1,17 @@
+{
+  "name": "gameoflife",
+  "version": "1.0.0",
+  "description": "gameoflife with WASM and Rust",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "%INIT_CWD%/node_modules/.bin/webpack && cd dist && %INIT_CWD%/node_modules/.bin/wasm-server && echo \"Built and running on port 3000\""
+  },
+  "author": "Ray Keating",
+  "license": "ISC",
+  "dependencies": {
+    "wasm-server": "0.0.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
